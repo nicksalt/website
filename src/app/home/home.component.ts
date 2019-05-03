@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Typed from 'typed.js';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import Typed from 'typed.js';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private toastr: ToastrService) { }
 
   ngOnInit() {
     const options = {
@@ -17,8 +18,14 @@ export class HomeComponent implements OnInit {
         backSpeed: 10,
 
     };
-
     const typed = new Typed('.typed', options);
+
+    setTimeout(() => this.toastr.warning('Not all features work properly.', 'In Development', {
+      positionClass: 'toast-bottom-center',
+      closeButton: true,
+      progressBar: true
+    }));
   }
 
 }
+
