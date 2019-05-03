@@ -3,7 +3,14 @@
   src: url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 }
 
-
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+p {
+  color: rgba(225, 225, 225, 0.9);
+}
 .fullscreen {
   margin-left: 18em;
   width: calc(100% - 18em);

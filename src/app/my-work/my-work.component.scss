@@ -21,6 +21,10 @@
 
 
 }
+.row {
+  width: 100%;
+  margin-left: 0px;
+}
 
 .image > .image-container > img {
   max-width: 100%;
@@ -50,13 +54,8 @@
   margin: auto;
   max-width: 1000px;
 }
-.info > .content > h2 {
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-}
+
 .info > .content> p {
-  color: #f4f4f4;
   margin-top: 25px;
   font-size: 18px;
 }
