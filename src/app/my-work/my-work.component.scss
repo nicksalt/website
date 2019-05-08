@@ -1,4 +1,4 @@
-
+@import './../../styles.scss';
 .image{
   padding: 0;
   background: white;
@@ -37,16 +37,16 @@
   align-items: center;
 }
 #first {
-  background: #8EAEBD;
+  background: $blue-panel-1;
 }
 #second {
-  background: #87A5B3;
+  background: $blue-panel-2;
 }
 #third {
-  background: #809CAA;
+  background: $blue-panel-3;
 }
 #fourth {
-  background: #7994A1;
+  background: $blue-panel-4;
 }
 .info > .content {
   width: 90%;
@@ -59,11 +59,7 @@
   margin-top: 25px;
   font-size: 18px;
 }
-.info > .content > .btn {
-  border-radius: 30px;
-  margin-top: 35px;
-  padding: 7px 25px 7px 25px;
-}
+
 @media screen and (min-width: 1680px) {
 
   .info > .content > h2 {

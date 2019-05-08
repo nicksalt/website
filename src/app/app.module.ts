@@ -10,6 +10,11 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastrModule} from 'ngx-toastr';
+import {MatFormFieldModule, MatInputModule, MatNativeDateModule, MatSidenavModule} from '@angular/material';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,13 +23,22 @@ import {ToastrModule} from 'ngx-toastr';
     HomeComponent,
     MyWorkComponent,
     AboutMeComponent,
-    GetInTouchComponent
+    GetInTouchComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatFormFieldModule,
+    MatInputModule,
+    MatSidenavModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatNativeDateModule,
+    ScrollingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

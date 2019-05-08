@@ -1,0 +1,23 @@
+@import './../../styles.scss';
+
+.fullscreen {
+  padding: 75px;
+  background: $primary-light;
+}
+.first {
+  border-right: 1px solid $white-trans-light;
+}
+ small {
+   color: $white-trans-light;
+ }
+a {
+  color: $white-trans-light;
+  padding-bottom: 1px;
+  border-bottom: 1px dotted $white-trans-light;
+}
+
+a:hover{
+  text-decoration: none;
+  border-bottom: 0;
+  color: white;
+}

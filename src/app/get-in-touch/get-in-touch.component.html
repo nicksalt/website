@@ -1,0 +1,69 @@
+<div class="fullscreen">
+  <div class="text">
+    <h2>Get in touch</h2>
+    <p>If you are interested in discussing a project or you would just like to connect, feel free to contact me! I can be reached by using the form below or by any of the methods listed.</p>
+  </div>
+  <div class="row" id="fullscreen-row">
+    <div class="col-lg-8 form">
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field class="my-form-field">
+            <input matInput placeholder="Name" [formControl]="nameFormControl" autocomplete="name">
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field class="my-form-field">
+            <input matInput placeholder="Email" [formControl]="emailFormControl" autocomplete="email">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <mat-form-field class="my-form-field" id="message">
+            <textarea matInput placeholder="Message" [formControl]="messageBodyFormControl"></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn btn-outline-light" (click)="onSubmit()">Send Message</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 info">
+      <div class="row align-items-center">
+        <div class="col-auto icon">
+          <i class="fas fa-map-marker-alt fa-2x"></i>
+        </div>
+        <div class="col-auto">
+          <h6>Ottawa, Ontario</h6>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-auto icon">
+          <i class="fas fa-paper-plane fa-2x"></i>
+        </div>
+        <div class="col-auto">
+          <h6><a href="mailto:nicksalt24@gmail.com">nicksalt24@gmail.com</a></h6>
+        </div>
+       </div>
+      <div class="row align-items-center">
+        <div class="col-auto icon">
+          <i class="fas fa-phone fa-2x"></i>
+        </div>
+        <div class="col-auto">
+          <h6><a href="tel:6136619805">(613) 661-9805</a></h6>
+        </div>
+        </div>
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <h5>Social:</h5>
+        </div>
+        <div class="col-auto">
+          <a target="_blank" href="https://github.com/nicksalt" class="no-underline"><i class="fa-github fa-lg fab"></i></a>
+          <a target="_blank" href="https://ca.linkedin.com/in/nick-salt" class="no-underline"><i class="fa-linkedin fa-lg fab"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

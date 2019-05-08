@@ -1,10 +1,24 @@
 @import '~ngx-toastr/toastr.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 @font-face {
   font-family: roboto;
   src: url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 }
 
+//Variables
+$primary: #30415D;
+$primary-light: #374A6A;
+$primary-dark: #031424;
+$secondary: #CF6766;
+$secondary-light: #D16F6E;
+$blue-panel-1: #8EAEBD;
+$blue-panel-2: #87A5B3;
+$blue-panel-3: #809CAA;
+$blue-panel-4: #7994A1;
+$white-trans-light:rgba(255, 255, 255, 0.2);
+$white-trans-dark:rgba(225, 225, 225, 0.8);
+:host { display: block }
 h2 {
   color: white;
   font-weight: bold;
@@ -18,6 +32,41 @@ p {
   width: calc(100% - 18em);
 }
 
+/** Overrides label color **/
+.my-form-field.mat-form-field-appearance-legacy .mat-form-field-label,
+.my-form-field.mat-form-field-appearance-legacy.mat-focused {
+  color: white !important;
+}
+
+.my-form-field input, .my-form-field textarea{
+  caret-color: rgba(225, 225, 225, 0.9) !important;
+  color: rgba(225, 225, 225, 0.9) !important;
+}
+
+.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: rgba(225, 225, 225, 0.2) !important;
+}
+
+.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: rgba(225, 225, 225, 0.2) !important;
+}
+i {
+  color: rgba(225, 225, 225, 0.8);
+}
+.btn-outline-light {
+  border-radius: 30px;
+  margin-top: 35px;
+  padding: 7px 25px 7px 25px;
+}
+i:hover {
+  color: white;
+}
+
+h6 {
+  color: white;
+}
 @media screen and (min-width: 1680px) {
   .fullscreen {
     width: calc(100% - 25em);
@@ -30,4 +79,3 @@ p {
     margin-left: 0;
   }
 }
-

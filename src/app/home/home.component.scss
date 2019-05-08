@@ -1,5 +1,7 @@
+@import './../../styles.scss';
 .fullscreen{
-  background: #30415D;
+  background: $primary;
+  position: relative;
 }
 
 .intro {
@@ -12,26 +14,16 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  -moz-flex-direction: column;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -moz-justify-content: center;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
   justify-content: center;
   min-height: 100vh;
   position: relative;
 }
 
-.inner {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+
 .intro h1{
   text-align: center;
   font-size: 4em;
@@ -52,18 +44,15 @@
 #icons li {
   display:inline;
   margin-right: 25px;
-  color: #A2A9B6;
+  color: $white-trans-light;
 
 }
 
 #icons li a {
   text-decoration: none;
-  color: #A2A9B6;
+  color: $white-trans-light;
 }
 
-#icons li a:hover {
-  color: #ffffff;
-}
 
 
 .typed {
@@ -100,7 +89,7 @@
   }
 
   .intro .inner {
-    margin-top: 0px;
+    margin-top: 0;
   }
   .intro-button{
     margin-bottom: 10px;
@@ -115,7 +104,7 @@
   }
 
   .intro .inner {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
 
