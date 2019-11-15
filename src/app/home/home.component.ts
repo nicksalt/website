@@ -11,11 +11,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     const options = {
-        strings: ['Developer:', 'Android,', 'iOS,', 'Web.', 'Student.', 'Hey, I\'m Nick.'],
+        strings: ['Developer:', 'Mobile,', 'Frontend,', 'Backend.', 'Hey, I\'m Nick.'],
         typeSpeed: 30,
         backSpeed: 10,
 
     };
+    
     const typed = new Typed('.typed', options);
   }
 
