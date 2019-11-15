@@ -6,9 +6,9 @@ import {Component, ElementRef, ViewChild} from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
-  @ViewChild('myWork') myWork: ElementRef;
-  @ViewChild('aboutMe') aboutMe: ElementRef;
-  @ViewChild('getInTouch') getInTouch: ElementRef;
+  @ViewChild('myWork', { static: true }) myWork: ElementRef;
+  @ViewChild('aboutMe', { static: true }) aboutMe: ElementRef;
+  @ViewChild('getInTouch', { static: true }) getInTouch: ElementRef;
   myWorkTop: number;
   aboutMeTop: number;
   getInTouchTop: number;

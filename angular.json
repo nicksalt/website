@@ -24,7 +24,9 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/github-assets/README.md",
+              "src/github-assets/CNAME"
             ],
             "styles": [
               "src/styles.scss",
@@ -103,6 +105,15 @@
             ],
             "exclude": [
               "**/node_modules/**"
+            ]
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "assets": [
+              "src/github-assets/README.md",
+              "src/github-assets/CNAME"
             ]
           }
         }

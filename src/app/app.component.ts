@@ -9,10 +9,10 @@ import {NavComponent} from './nav/nav.component';
 })
 export class AppComponent implements AfterViewInit {
   title = 'nicksalt.github.io';
-  @ViewChild('myWorkComponent', {read: ElementRef}) myWorkRef: ElementRef;
-  @ViewChild('aboutMeComponent', {read: ElementRef}) aboutMeRef: ElementRef;
-  @ViewChild('getInTouchComponent', {read: ElementRef}) getInTouchRef: ElementRef;
-  @ViewChild('navComponent') navComponent: NavComponent;
+  @ViewChild('myWorkComponent', { read: ElementRef, static: true }) myWorkRef: ElementRef;
+  @ViewChild('aboutMeComponent', { read: ElementRef, static: true }) aboutMeRef: ElementRef;
+  @ViewChild('getInTouchComponent', { read: ElementRef, static: true }) getInTouchRef: ElementRef;
+  @ViewChild('navComponent', { static: true }) navComponent: NavComponent;
   myWorkTop: number;
   myWorkHeight: number;
   aboutMeTop: number;
