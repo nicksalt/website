@@ -111,10 +111,8 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "assets": [
-              "src/github-assets/README.md",
-              "src/github-assets/CNAME"
-            ]
+            "cname": "nicksalt.me",
+            "branch": "master"
           }
         }
       }
