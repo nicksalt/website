@@ -39,7 +39,7 @@ export class NavComponent {
     this.aboutMeTop = aboutMeTop;
     this.getInTouchTop = getInTouchTop;
   }
-  private onClick(item: number) {
+  public onClick(item: number) {
     if (item === 0) {
       window.scrollTo({
         top: this.myWorkTop,

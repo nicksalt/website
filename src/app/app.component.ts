@@ -38,7 +38,7 @@ export class AppComponent implements AfterViewInit {
       });
   }
 
-  private onWindowScroll() {
+  public onWindowScroll() {
     const documentHeight = document.documentElement.scrollTop + (window.innerHeight / 2);
     if (documentHeight < this.myWorkHeight &&
       this.myWorkTop < documentHeight) {
@@ -54,7 +54,7 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
-  private onResize() {
+  public onResize() {
     this.myWorkTop = this.myWorkRef.nativeElement.offsetTop;
     this.myWorkHeight = this.myWorkTop + this.myWorkRef.nativeElement.offsetHeight;
     this.aboutMeTop = this.aboutMeRef.nativeElement.offsetTop;

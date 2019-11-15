@@ -19,7 +19,7 @@ export class GetInTouchComponent {
     return !(re.test(String(email).toLowerCase()));
   }
 
-  private onSubmit() {
+  public onSubmit() {
     const name = this.nameFormControl.value;
     const email = this.emailFormControl.value;
     const message = this.messageBodyFormControl.value;
