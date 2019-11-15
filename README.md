@@ -3,4 +3,4 @@ This it the source code to my personal website. It is build with [Angular 8](htt
 
 The source code itself is in this branch ```dev```, and it is deployed to [```master```](https://github.com/nicksalt/nicksalt.github.io/tree/master). 
 
-<div style="text-align:center"><a href="http://nicksalt.me" target="_blank"><img src="./src/assets/images/logo/logo-full.jpg" /></a></div>
+<div style="text-align:center"><a href="http://nicksalt.me" target="_blank"><img src="./src/assets/images/logo/logo-preview.png" /></a></div>
