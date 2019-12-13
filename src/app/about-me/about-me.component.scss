@@ -25,6 +25,7 @@
 .row > .col-md-6 {
   border: solid 1px $white-trans-light;
 }
-p {
-  color: #EABEBE;
+p, h4{
+  opacity: 0.75;
+  color: white;
 }

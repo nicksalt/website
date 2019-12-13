@@ -70,7 +70,13 @@ h6 {
 .disabled:hover{
   cursor: default !important;
 }
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 2560px) {
+  .fullscreen {
+    width: calc(100% - 50em);
+    margin-left: 50em;
+  }
+}
+@media screen and (max-width: 1680px) {
   .fullscreen {
     width: calc(100% - 25em);
     margin-left: 25em;

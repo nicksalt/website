@@ -1,15 +1,22 @@
 @import './../../styles.scss';
+.my-work{
+  background: $blue-panel-1;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, $blue-panel-1, $blue-panel-4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, $blue-panel-1, $blue-panel-4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 .image{
   padding: 0;
   background: white;
   min-height: 200px;
 }
 
-#nokia {
+#Nokia {
   background: #124191;
 }
-#apption{
-  padding: 16px;
+#Apption{
+  padding: 32px;
 }
 #all-projects{
   background: #EAE8E9;
@@ -51,25 +58,12 @@
 .info {
   padding: 50px 16px 40px 16px;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-#first {
-  background: $blue-panel-1;
-}
-#second {
-  background: $blue-panel-2;
-}
-#third {
-  background: $blue-panel-3;
-}
-#fourth {
-  background: $blue-panel-4;
 }
 .info > .content {
   width: 90%;
   max-height: 100%;
-  margin: auto;
+  margin-left: 4rem;
   max-width: 1000px;
 }
 
@@ -86,5 +80,15 @@
   .info > .content> p {
     font-size: 20px;
   }
+}
+
+@media screen and (max-width: 1776px){
+  .info {
+    justify-content: center;
+  }
+  .info > .content {
+    margin: auto;
+  }
+  
 }
 

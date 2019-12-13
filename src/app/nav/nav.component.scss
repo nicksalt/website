@@ -92,7 +92,7 @@ body.is-loading .sidebar nav ul li {
 }
 
 
-@media screen and (min-width: 1680px) {
+@media screen and (max-width: 1680px) {
   .sidebar {
     width: 25em;
   }
@@ -172,4 +172,11 @@ body.is-loading .sidebar nav ul li {
     display: none;
   }
 
+
+}
+
+@media screen and (min-width: 2560px){
+  .sidebar{
+    width: 50em;
+  }
 }
