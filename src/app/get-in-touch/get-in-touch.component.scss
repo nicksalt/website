@@ -58,10 +58,13 @@ a:hover{
 
 .icon{
   width: 50px;
-
+  justify-content: center;
+  display: flex;
 
   i {
     color: white;
+    display: inline;
+    text-align: right;
   }
 
 }
@@ -73,6 +76,15 @@ a:hover{
     .col-auto {
       max-width: 100%;
     }
+  }
+}
+
+.flex-row{
+  display: flex;
+  align-items: top;
+
+  .flex-col {
+    margin-right: 16px;
   }
 }
 

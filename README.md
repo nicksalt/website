@@ -1,5 +1,5 @@
 # My Personal Website - [nicksalt.me](https://firebase.google.com/products/hosting)
-This it the source code to my personal website. It is build with [Angular 8](https://angular.io/), hosted  by [Firebase](https://firebase.google.com/products/hosting).
+This it the source code to my personal website. It is build with [Angular 8](https://angular.io/) and hosted  by [Firebase](https://firebase.google.com/products/hosting).
 
 All source code is in this branch ```master```.
 

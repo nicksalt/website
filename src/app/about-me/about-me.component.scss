@@ -8,15 +8,21 @@
   background: $secondary-light;
 }
 
+.my-work{
+
+  padding: 8px;
+}
 #left {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.skill {
-  margin-top: 15px;
-  margin-bottom: 15px;
+.skill-category{
+  margin-bottom: 16px;
+  margin-left: 4px;
+}
+.skills {
+  margin-bottom: 16px;
 }
 .progress-bar {
   background: $primary-light;
@@ -28,4 +34,25 @@
 p, h4{
   opacity: 0.75;
   color: white;
+}
+.badge-flex{
+  display: inline-flex;
+  flex-wrap: nowrap;
+  background-color: #30415D;
+  padding: 8px 16px;
+  margin-right: 8px;
+  margin-top: 4px;
+  color: white;
+  font-size: 75%;
+  font-weight: 700;
+  border-radius: 10rem;
+  .icon-badge{
+    display: flex;
+    align-items: center;
+
+    i{
+      margin-right: 8px;
+      color: $secondary;
+    }
+  }
 }

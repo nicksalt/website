@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireAuthModule } from '@angular/fire/auth';
 import {AngularFirestoreModule} from '@angular/fire/firestore'
 import {FIREBASE_CONFIG} from '../../private-data/firebase-config';
 import { AppRoutingModule } from './app-routing.module';
@@ -43,7 +42,7 @@ import {HttpClientModule} from '@angular/common/http';
     ScrollingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
-    AngularFirestoreModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
