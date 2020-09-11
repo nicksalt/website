@@ -1,17 +1,20 @@
-@import './../../styles.scss';
+@import 'styles.scss';
 
 .fullscreen {
-  background: $primary;
+  background: map-get($colors, "primary");
   position: relative;
 }
 
-
-.intro {
+#home {
   background-attachment: fixed;
   background-image: url("../../assets/images/intro.svg");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+.intro {
+
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -116,20 +119,21 @@
     }
   }
 
+
   .icons {
     text-align: center;
     margin-top: 40px;
-    padding: 0!important;
+    padding: 0 !important;
 
     li {
       display: inline;
 
       margin: 0 12px;
-      color: $white-trans-light;
+      color: map-get($colors, "white-trans-light");
 
       a {
         text-decoration: none;
-        color: $white-trans-light;
+        color: map-get($colors, "white-trans-light");
       }
     }
   }
@@ -137,27 +141,94 @@
   .typed {
     color: #ffffff;
   }
+
 }
 
-body{
+.container-site {
+  width: 100%;
+  padding: 4rem 0rem 8rem 0rem;
+  position: relative;
+
+
+  .devices {
+    width: 95%;
+    border-radius: 50px;
+    background-color: map-get($colors, "primary-transparent");
+    opacity: 0.7;
+    border: solid 1px map-get($colors, "secondary-transparent");
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .device {
+      width: 33%;
+      min-width: 150px;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+
+  }
+
+  .about-site {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: map-get($colors, "primary-transparent");
+    border-left: solid 1px map-get($colors, "secondary-transparent");
+    border-right: solid 1px map-get($colors, "secondary-transparent");
+    border-bottom: solid 1px map-get($colors, "secondary-transparent");
+    border-radius: 0 0 50px 50px;
+    text-align: start;
+
+    h1 {
+      color: rgba(225, 225, 225, 0.9);
+      margin-bottom: 1rem;
+      font-size:  2.75rem;
+      opacity: 0.95;
+    }
+    a{
+      color: map-get($colors, "secondary");
+      opacity: 0.8;
+      text-decoration: none;
+      border-bottom: 1px dotted map-get($colors, "secondary");    
+    }
+    
+      a:hover{
+        border-bottom: 0; 
+        opacity: 1;   
+      }
+  }
+}
+
+
+body {
   margin: 0;
   padding: 0;
   background-color: #000;
 }
 
 @keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
+
 @media screen and (min-width: 2560px) {
   .icons {
     li {
@@ -166,11 +237,11 @@ body{
     }
   }
 
-  h1{
+  h1 {
     font-size: 8em !important;
   }
 
-  .logo{
+  .logo {
     height: 350px !important;
   }
 
@@ -189,6 +260,12 @@ body{
     background-attachment: scroll;
   }
 
+  .about-site {
+
+    h1 {
+      font-size:  2.5rem !important;
+    }
+  }
   .intro .inner {}
 }
 
@@ -196,6 +273,11 @@ body{
 
   .intro p br {
     display: none;
+  }.about-site {
+
+    h1 {
+      font-size:  2.25rem !important;
+    }
   }
 
 }
@@ -212,6 +294,14 @@ body{
 
   .intro-button {
     margin-bottom: 10px;
+  }
+
+}
+@media screen and (max-width: 510px) {
+.about-site {
+    h1 {
+      font-size:  2rem !important;
+    }
   }
 
 }
@@ -234,13 +324,14 @@ body{
     width: 100%;
   }
 
-  .arrow{
+  .arrow {
     position: absolute;
     bottom: 40px;
     left: 50%;
-    transform: translate(-50%,-50%);
-}
-.arrow span{
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow span {
     display: block;
     width: 20px;
     height: 20px;
@@ -249,18 +340,33 @@ body{
     transform: rotate(45deg);
     margin: -10px 0;
     animation: animate 2s infinite;
-}
-.arrow span:nth-child(2){
+  }
+
+  .arrow span:nth-child(2) {
     animation-delay: -0.2s;
-}
-.arrow span:nth-child(3){
+  }
+
+  .arrow span:nth-child(3) {
     animation-delay: -0.4s;
-}
+  }
+  .about-site {
+    h1 {
+      font-size:  1.5625rem !important
+    }
+  }
 
 }
 
 @media screen and (max-width: 375px) {
   .intro h1 {
     font-size: 2.5em;
+  }
+  .about-site {
+    h1 {
+      font-size:  1.3rem !important
+    }
+    p{
+      font-size: 0.8rem !important;
+    }
   }
 }

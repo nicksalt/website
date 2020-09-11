@@ -1,0 +1,14 @@
+@import 'styles.scss';
+
+.fullscreen {
+  padding: 75px;
+  background: map-get($colors, "primary-light");
+}
+.first {
+  border-right: 1px solid map-get($colors, "white-trans-light");
+}
+ small {
+   color: map-get($colors, "white-trans-light");
+   margin-right: 4px;
+   display: flex;
+ }

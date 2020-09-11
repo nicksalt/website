@@ -1,23 +1,60 @@
 <div class="fullscreen">
-  <div class="intro">
-    <div class="inner">
-      <div class="logo">
-        <img src="./assets/images/logo/logo-small-transparent.png" />
+  <div id="home" (window:resize)="changeBackground()">
+    <div class="intro">
+      <div class="inner">
+        <div class="logo">
+          <img src="./assets/images/logo/logo-small-transparent.png" />
+        </div>
+        <h1><span class="typed"></span></h1>
+        <ul class="icons">
+          <li>&ndash;</li>
+          <li><a target="_blank" href="https://github.com/nicksalt"><i class="fa-github fa-lg fab"></i></a></li>
+          <li><a target="_blank" href="https://ca.linkedin.com/in/nick-salt"><i class="fa-linkedin fa-lg fab"></i></a>
+          </li>
+          <li>&ndash;</li>
+        </ul>
       </div>
-      <h1><span class="typed"></span></h1>
-      <ul class="icons">
-        <li>&ndash;</li>
-        <li><a target="_blank" href="https://github.com/nicksalt"><i class="fa-github fa-lg fab"></i></a></li>
-        <li><a target="_blank" href="https://ca.linkedin.com/in/nick-salt"><i class="fa-linkedin fa-lg fab"></i></a>
-        </li>
-        <li>&ndash;</li>
-      </ul>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <div class="arrow">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="container-site">
+      <div class="devices">
+        <div class="device">
+          <img src="../../assets//images/macbookpro13_front.png" />
+        </div>
+        <div class="device">
+          <img src="../../assets//images/iphone-logo_iphonexspacegrey_portrait.png" />
+        </div>
+        <div class="device">
+          <img src="../../assets//images/imac2015retina_front.png" />
+        </div>
+      </div>
+      <div class="about-site">
+        <sass-helper></sass-helper>
+        <h1>Thanks for stopping by!</h1>
+        <p>
+          I created my site as a portfolio of my skills and to overview my current and past projects. 
+          Check them out below!        
+         </p>
+        <p>
+          This current version of my website you are viewing 
+          was built with the 
+          <app-link [title]="'Angular'" [href]="''"
+          [color]="linkColor"></app-link> 
+          framework. 
+          I use <a href="">Firebase</a> for my and backend 
+          solutions. All the content on the site is fetched 
+          from a database, allowing me to change the content 
+          on the fly. Eventually, this site will be available 
+          in <a href="">Angular</a>, <a href="">Blazor</a>, 
+          and <a href="">React</a>. You can use the buttons 
+          below to access the different versions of the site.
+        </p>
+      </div>
+    </div>
 
-    </div>
   </div>
 </div>

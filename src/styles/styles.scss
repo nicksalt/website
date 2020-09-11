@@ -6,17 +6,24 @@
 }
 
 //Variables
-$primary: #30415D;
-$primary-light: #374A6A;
-$primary-dark: #031424;
-$secondary: #CF6766;
-$secondary-light: #D16F6E;
-$blue-panel-1: #8EAEBD;
-$blue-panel-2: #87A5B3;
-$blue-panel-3: #809CAA;
-$blue-panel-4: #7994A1;
-$white-trans-light:rgba(255, 255, 255, 0.2);
-$white-trans-dark:rgba(225, 225, 225, 0.8);
+$colors: (
+  "primary": #30415d,
+  "primary-transparent": rgba(48, 65, 93, 0.7),  
+  "primary-light": #374A6A,
+  "primary-dark": rgb(3, 20, 36),
+  "primary-dark-transparent": rgba(3, 20, 36, 0.7),
+  "secondary": #cf6766,
+  "secondary-transparent": rgba(207, 103, 102, 0.5),
+  "secondary-dark": rgb(157, 81, 80),
+  "secondary-light": #D16F6E,
+  "blue-panel-1": #8EAEBD,
+  "blue-panel-2": #87A5B3,
+  "blue-panel-3": #809CAA,
+  "blue-panel-4": #7994A1,
+  "white-trans-light": rgba(255, 255, 255, 0.2),
+  "white-trans-dark": rgba(225, 225, 225, 0.8)
+);
+
 :host { display: block }
 h2 {
   color: white;
@@ -29,6 +36,10 @@ p {
 .fullscreen {
   margin-left: 18em;
   width: calc(100% - 18em);
+}
+
+app-link{
+  display: contents;
 }
 
 /** Overrides label color **/

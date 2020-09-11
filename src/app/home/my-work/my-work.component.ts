@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map, last  } from 'rxjs/operators';
-import { Project } from '../structures/Project';
+import { Project } from '../../models/Project';
 
 @Component({
   selector: 'app-my-work',

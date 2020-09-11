@@ -1,11 +1,11 @@
-@import './../../styles.scss';
+@import 'styles.scss';
 .fullscreen {
-  background: $secondary;
+  background: map-get($colors, "secondary");
   padding: 75px ;
 }
 
 .row {
-  background: $secondary-light;
+  background: map-get($colors, "secondary-light");
 }
 
 .my-work{
@@ -25,11 +25,11 @@
   margin-bottom: 16px;
 }
 .progress-bar {
-  background: $primary-light;
+  background: map-get($colors, "primary-light");
 }
 
 .row > .col-md-6 {
-  border: solid 1px $white-trans-light;
+  border: solid 1px map-get($colors, "white-trans-light");
 }
 p, h4{
   opacity: 0.75;
@@ -52,7 +52,7 @@ p, h4{
 
     i{
       margin-right: 8px;
-      color: $secondary;
+      color: map-get($colors, "secondary");
     }
   }
 }

@@ -1,7 +1,7 @@
-@import './../../styles.scss';
+@import 'styles.scss';
 .sidebar {
   padding: 2.5em 2.5em 0.5em 2.5em ;
-  background: $primary-dark;
+  background: map-get($colors, "primary-dark");
   cursor: default;
   height: 100vh;
   left: 0;
@@ -64,11 +64,11 @@ body.is-ie .sidebar > .inner {
 
 
 .sidebar nav a:hover {
-  color: $white-trans-dark;
+  color: map-get($colors, "white-trans-dark");
 }
 
 .active {
-  border-bottom: 2px solid $secondary-light;
+  border-bottom: 2px solid map-get($colors,"secondary-light");
   a {
     color: white !important;
   }

@@ -10,7 +10,10 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "spec": false,
+          "styleExt": "scss",
+          "style": "scss"
+
         }
       },
       "architect": {
@@ -29,12 +32,17 @@
               "src/github-assets/CNAME"
             ],
             "styles": [
-              "src/styles.scss",
+              "src/styles/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/solid.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            },
             "scripts": [],
             "es5BrowserSupport": true
           },
