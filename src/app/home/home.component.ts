@@ -34,7 +34,6 @@ export class HomeComponent implements OnInit {
 
   ngAfterViewInit(){
     if(this.linkColor == null) {
-      this.linkColor = this.sassHelper.readProperty("secondary");
       console.log(this.linkColor);
       this.cdRef.detectChanges();
     }
